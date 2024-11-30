@@ -1,0 +1,44 @@
+# 服务端口
+server:
+  port: 8081
+
+# spring 配置
+spring:
+  application:
+    name: wordbook-user-provider
+  # nacos 的注册地址
+  cloud:
+    nacos:
+      discovery:
+        namespace: wordbook # 这里要用 “命名空间ID”
+        server-addr: centos7.server.com:8848 # 192.168.110.128:8848
+  # 连接数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://centos7.server.com:3306/wordbook?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  # redis 配置
+#  data:
+#    redis:
+#      host: centos7.server.com # 192.168.110.128
+#      port: 6379
+#      lettuce:
+#        pool:
+#          min-idle: 10
+#          max-active: 100
+#          max-idle: 10
+
+# dubbo 配置
+dubbo:
+  application:
+    name: ${spring.application.name}
+    qos-enable: false # 禁用 qos 监控服务，防止端口被占用
+  # 注册进 nacos
+  registry:
+    address: nacos://centos7.server.com:8848?namespace=wordbook # nacos://192.168.110.128:8848?namespace=
+    id: nacos-registry
+  # 设置协议
+  protocol:
+    name: dubbo
+    port: -1 # 禁用监听端口，防止端口被占用

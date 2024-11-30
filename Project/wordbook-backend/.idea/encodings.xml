@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-redis-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-redis-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/wordbook-user-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/wordbook-user-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/wordbook-user-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-user/wordbook-user-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/wordbook-words-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/wordbook-words-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/wordbook-words-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wordbook-words/wordbook-words-provider/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

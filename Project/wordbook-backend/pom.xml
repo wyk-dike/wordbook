@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.wordbook</groupId>
+  <artifactId>wordbook-backend</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>wordbook-api</module>
+    <module>wordbook-user</module>
+    <module>wordbook-common</module>
+      <module>wordbook-redis-starter</module>
+    <module>wordbook-words</module>
+  </modules>
+
+  <properties>
+    <!--  全局版本管理  -->
+    <dubbo.version>3.2.9</dubbo.version>
+    <spring-cloud-bootstrap.version>3.0.2</spring-cloud-bootstrap.version>
+    <mysql.version>8.0.28</mysql.version>
+    <mybatis-plus.version>3.5.3</mybatis-plus.version>
+    <pagehelper.version>1.4.7</pagehelper.version>
+  </properties>
+
+  <version>1.0</version>
+  <name>wordbook-backend</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencyManagement>
+    <dependencies>
+<!--      <dependency>-->
+<!--        <groupId>junit</groupId>-->
+<!--        <artifactId>junit</artifactId>-->
+<!--        <version>3.8.1</version>-->
+<!--        <scope>test</scope>-->
+<!--      </dependency>-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>3.0.4</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>2022.0.0.0-RC2</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- 打包 -->
+</project>
